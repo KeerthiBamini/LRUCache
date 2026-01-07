@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LRU Cache Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>LRU Cache Visualizer</h1>
+
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="modeToggle">
+        <span class="slider round"></span>
+      </label>
+      <span id="modeLabel">PUT Mode</span>
+    </div>
+
+    <div class="controls">
+      <input type="number" id="keyInput" placeholder="Key">
+      <input type="number" id="valueInput" placeholder="Value">
+      <button id="actionBtn">PUT</button>
+    </div>
+
+    <div class="status">
+      <p id="actionStatus">Welcome to LRU Cache Visualizer!</p>
+    </div>
+
+    <div class="cache-container" id="cacheContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
